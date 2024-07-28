@@ -1,0 +1,14 @@
+class Solution:
+	def removeDups(self, str):
+		# code here
+		"""
+		In this code first the string is converted to list and then each and every element is chaeked
+		if the element is not present in the new it is appended to the list this process removes the 
+		repetition of the characters
+		"""
+		lis_s = list(str)
+		lis_news = []
+		for i in lis_s:
+		    if i not in lis_news:#Checking weather the new list contains the char or not
+		        lis_news.append(i)
+		return ''.join(lis_news) #return the joined list which contains the solution 
